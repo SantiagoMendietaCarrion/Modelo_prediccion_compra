@@ -1,1 +1,0 @@
-# Modelo_prediccion_compra
