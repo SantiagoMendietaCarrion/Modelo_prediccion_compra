@@ -538,7 +538,7 @@ if selected == '4. Métricas de evaluación':
     fig1_name='svm_barplot_evaluation_metrics2.png'
     save_path_fig1 = Path(save_folder_image, fig1_name)
     fig1.savefig(save_path_fig1)
-       
+          
     # Obtener Curva ROC
     fig2, ax2 = plt.subplots(layout='constrained', figsize=(5,5))
     fpr, tpr, thresholds = roc_curve(test_Y2, svm_probabilities2)
@@ -554,7 +554,7 @@ if selected == '4. Métricas de evaluación':
     fig2_name='svm_roc_curve2.png'
     save_path_fig2 = Path(save_folder_image, fig2_name)
     fig2.savefig(save_path_fig2)
-
+    
     # Obtener Curva Precision-Recall
     fig3, ax3 = plt.subplots(layout='constrained', figsize=(5,5))
     precision, recall, thresholds = precision_recall_curve(test_Y2, svm_probabilities2)
@@ -570,7 +570,7 @@ if selected == '4. Métricas de evaluación':
     fig3_name='svm_precision_recall_curve2.png'
     save_path_fig3 = Path(save_folder_image, fig3_name)
     fig3.savefig(save_path_fig3)
-
+   
     # Asignación de las variables obtenidas a las variables st.session_state
     ss.svm_df2 = svm_df2
     ss.svm_report_df2_mod2 = svm_report_df2_mod2
